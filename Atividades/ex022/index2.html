@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.678);
+            font-weight: bolder;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+        }
+
+        tfoot td {
+            background-color: gray;
+            color: white;
+        }
+
+        td.p {
+            text-align: center;
+        }
+
+        td.n {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgba(128, 128, 128, 0.144);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--TABLE
+            Caption
+
+            THEAD
+                TH, TR, TD
+            TBODY
+                TH, TR, TD
+            TFOOT
+               Th, TR, TD
+    -->
+
+    <table>
+        <caption>Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">POSIÇÃO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col">POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="p">1</td>
+                <td>São Paulo</td>
+                <td class="n">46 649 132</td>
+            </tr>
+            <tr>
+                <td class="p">2</td>
+                <td>Minas Gerais</td>
+                <td class="n">21 411 923</td>
+            </tr>
+            <tr>
+                <td class="p">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="n">17 463 349</td>
+            </tr>
+            <tr>
+                <td class="p">4</td>
+                <td>Bahia</td>
+                <td class="n">14 985 284</td>
+            </tr>
+            <tr>
+                <td class="p">5</td>
+                <td>Paraná</td>
+                <td class="n">11 597 484</td>
+            </tr>
+            <tr>
+                <td class="p">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="n">11 466 630</td>
+            </tr>
+            <tr>
+                <td class="p">7</td>
+                <td>Pernambuco</td>
+                <td class="n">9 674 793</td>
+            </tr>
+            <tr>
+                <td class="p">8</td>
+                <td>Ceará</td>
+                <td class="n">9 240 580</td>
+            </tr>
+            <tr>
+                <td class="p">9</td>
+                <td>Pará</td>
+                <td class="n">8 777 124</td>
+            </tr>
+            <tr>
+                <td class="p">10</td>
+                <td>Santa Catarina</td>
+                <td  class="n">7 338 473</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">TOTAL</th>
+                <td></td>
+                <td><strong>210 000 000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
